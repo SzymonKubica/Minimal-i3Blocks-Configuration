@@ -39,9 +39,6 @@ signal=9
 command=./battery.sh
 interval=30
 
-[battery_alert_deamon]
-command=./battery_alert.sh
-signal=8
 # Date Time
 [time]
 command=date '+%d.%m.%Y %H:%M:%S '

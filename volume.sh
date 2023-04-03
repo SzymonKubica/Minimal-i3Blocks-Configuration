@@ -1,4 +1,5 @@
-
+# Author: Szymon Kubica
+#
 is_pacmd_running="$(pacmd 2>&1 | awk '/No PulseAudio daemon running,/{print $1}')"
 
 if [[ $is_pacmd_running == "No" ]]
