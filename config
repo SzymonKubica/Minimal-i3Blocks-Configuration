@@ -1,0 +1,49 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+separator_block_width=15
+markup=none
+
+[language]
+command=./language.sh
+signal=10
+
+[volume]
+label=
+command=./volume.sh
+interval=1
+signal=9
+
+# Battery indicator
+[battery]
+command=./battery.sh
+interval=30
+
+[battery_alert_deamon]
+command=./battery_alert.sh
+signal=8
+# Date Time
+[time]
+command=date '+%d.%m.%Y %H:%M:%S '
+interval=1
+
