@@ -32,7 +32,7 @@ fi
 
 if [[ $is_muted == "yes" ]]
 then
-  volume_icon="婢"
+  volume_icon=""
 fi
 
 echo "$volume_percentage $volume_icon "
