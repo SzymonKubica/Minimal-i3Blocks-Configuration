@@ -7,9 +7,11 @@ charge_level="${percentage%%[%]*}"
 if [[ $((charge_level)) -lt 5 && "$state" == "discharging" ]]
 then
   notify-send "Battery level critical: ${charge_level}% Please charge immediately!"
+  mpv --no-terminal ~/.config/i3blocks/battery-notification.wav
 elif [[ $((charge_level)) -lt 15 && "$state" == "discharging" ]]
 then
   notify-send -a "sway" "Battery level is low: ${charge_level}% Please connect charger."
+  mpv --no-terminal ~/.config/i3blocks/battery-notification.wav
 fi
 
 battery_icon=""
